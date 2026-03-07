@@ -1,0 +1,44 @@
+{
+    "skill_name": "ea-ads-google",
+    "evals": [
+        {
+            "id": 1,
+            "name": "audit-complet-golfone",
+            "prompt": "Fais un audit Google Ads du compte Golfone",
+            "expected_output": "Un rapport GOOGLE-ADS-REPORT.md avec Health Score, 6 catégories évaluées, findings et plan d'action",
+            "assertions": [
+                "Le rapport contient un Google Ads Health Score entre 0 et 100 avec un grade lettre",
+                "Les 6 catégories (Conversion Tracking, Wasted Spend, Account Structure, Keywords, Ads, Settings) sont couvertes avec un score individuel",
+                "Au moins 3 findings sont identifiés avec un statut PASS, WARNING ou FAIL",
+                "Un plan d'action avec des Quick Wins triés par impact est proposé"
+            ],
+            "files": []
+        },
+        {
+            "id": 2,
+            "name": "analyse-pmax-golfone",
+            "prompt": "Analyse les campagnes PMax de Golfone, est-ce qu'on utilise bien les asset groups ?",
+            "expected_output": "Analyse PMax avec section dédiée couvrant asset groups, audience signals et recommandations",
+            "assertions": [
+                "Une section PMax Deep Dive est présente dans le rapport",
+                "Les asset groups sont analysés en termes de diversité (text, images, vidéo)",
+                "Les audience signals sont évalués (custom segments, listes, demographics)",
+                "Des recommandations PMax spécifiques et actionnables sont formulées"
+            ],
+            "files": []
+        },
+        {
+            "id": 3,
+            "name": "budget-gaspille-golfone",
+            "prompt": "J'ai l'impression qu'on gaspille du budget sur le compte Google Ads de Golfone, tu peux vérifier ?",
+            "expected_output": "Analyse wasted spend avec estimation monétaire et recommandations négatives keywords",
+            "assertions": [
+                "La section Wasted Spend est couverte en priorité dans l'analyse",
+                "Une estimation du budget gaspillé en valeur monétaire est fournie",
+                "Les termes de recherche non pertinents sont identifiés avec suggestions de négatifs",
+                "Le rapport vérifie les broad match sans Smart Bidding et le ciblage géographique"
+            ],
+            "files": []
+        }
+    ]
+}

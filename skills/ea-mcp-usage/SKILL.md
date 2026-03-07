@@ -54,13 +54,63 @@ Avant de contourner un problème, **toujours chercher la doc** :
 
 ### google-ads-gms
 
+#### Basics
+
 | Subtilité | Détail |
 |---|---|
-| `customer_id` | Digits uniquement, pas de tirets (ex: `1234567890` pas `123-456-7890`) |
-| `login_customer_id` | Souvent le MCC parent. Utiliser `list_accessible_accounts` pour trouver les bons IDs |
+| `customer_id` | Digits uniquement, pas de tirets (ex: `7750228049` pas `775-022-8049`) |
 | GAQL date format | `segments.date` au format `'YYYY-MM-DD'` avec quotes simples |
 | Métriques incompatibles | Certaines métriques ne peuvent pas être dans la même query (ex: `search_impression_share` + `conversions` dans certains cas) |
 | Pas de `LIMIT` sur certaines vues | Certaines vues resource ne supportent pas LIMIT dans GAQL |
+
+#### Architecture MCC EdgeAngel
+
+Le MCC (Manager Customer) principal est **EdgeAngel Consulting** : `7750228049`.
+
+Le token OAuth du MCP est lié à ce MCC. Cela signifie que :
+- **Le MCC peut être requêté directement comme `customer_id`** pour lister les sous-comptes
+- **Les sous-comptes sont accessibles directement** avec leur propre `customer_id`, sans besoin de `login_customer_id`
+
+#### Hiérarchie de comptes — Pattern de découverte
+
+Pour lister tous les comptes sous le MCC EdgeAngel :
+
+```sql
+-- Requêter avec customer_id = 7750228049
+SELECT
+  customer_client.descriptive_name,
+  customer_client.id,
+  customer_client.status,
+  customer_client.manager
+FROM customer_client
+WHERE customer_client.status = 'ENABLED'
+```
+
+La vue `customer_client` retourne tous les sous-comptes (directs et indirects). Le champ `customer_client.manager` indique si c'est un sous-MCC (`true`) ou un compte publicitaire final (`false`).
+
+**Comptes clients principaux (sous le MCC EdgeAngel) :**
+
+| Client | customer_id | Type |
+|---|---|---|
+| Golf One 64 (Golfone) | `7751730476` | Compte ads |
+| Chauffagiste Izi confort (EDF) | `6893971454` | Compte ads |
+| EA pour CITEO | `1595306039` | Compte ads |
+| 02 - Kiloutou España | `1002611386` | Compte ads |
+| 03 - Kiloutou Polska | `3762274321` | Compte ads |
+| 05 - Kiloutou Italia | `7397043900` | Compte ads |
+| EdgeAngel - Website | `9123843844` | Compte ads |
+
+#### ⚠️ Bug connu : `login_customer_id`
+
+Le paramètre `login_customer_id` du MCP souffre d'un **bug Pydantic** : la valeur numérique est castée en `int` au lieu d'être gardée en `string`, ce qui provoque une erreur de validation.
+
+```
+Error: Input should be a valid string [type=string_type, input_value=7750228049, input_type=int]
+```
+
+**Workaround :** ne PAS utiliser `login_customer_id`. Grâce au token OAuth lié au MCC, tous les sous-comptes sont accessibles directement en passant leur `customer_id`. Ce workaround fonctionne pour toute la hiérarchie EdgeAngel.
+
+#### Outils de doc intégrés
 
 **Quand ça galère :** `get_gaql_doc` + `get_reporting_view_doc` + `get_reporting_fields_doc`
 
