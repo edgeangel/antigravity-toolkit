@@ -30,7 +30,7 @@ description: >
 ### Règles pour `name`
 - Préfixe `ea-` pour tous les skills EdgeAngel
 - Minuscules, tirets pour séparer les mots
-- Exemples : `ea-ads-google`, `ea-merchant-center`, `ea-orchestrateur`
+- Exemples : `ea-ads-google`, `ea-merchant-center`, `ea-mcp-usage`
 
 ### Règles pour `description`
 - **Pushy** : le skill doit se déclencher même quand l'utilisateur ne le nomme pas

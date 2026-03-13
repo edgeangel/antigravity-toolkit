@@ -1,6 +1,11 @@
 ---
 name: ea-analyse-edgeangel
-description: "Règles critiques pour analyser les données de performance acquisition EdgeAngel dans BigQuery (vue view_raw_daily_insight). Prévient les erreurs de jointure, d'agrégation et d'interprétation."
+description: >
+  Règles critiques pour analyser les données de performance acquisition EdgeAngel dans BigQuery
+  (vue view_raw_daily_insight). Prévient les erreurs de jointure, d'agrégation et d'interprétation.
+  Use when user says "données BigQuery", "analyse BQ EdgeAngel", "view_raw_daily_insight",
+  "requête BigQuery performance", "données capture", "données acquisition BigQuery".
+  Uses MCP: bigquery. Linked skill: ea-client-context for client IDs.
 ---
 
 # Analyse EdgeAngel — Règles Critiques

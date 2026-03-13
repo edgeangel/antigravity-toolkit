@@ -1,6 +1,9 @@
 ---
-name: merchant-center-audit
-description: Méthodologie complète d'audit Google Merchant Center. Exploite le MCP merchant-center pour diagnostiquer les flux produit, identifier les issues, analyser la performance et produire des recommandations actionnables.
+name: ea-merchant-center
+description: >
+  Audit complet Google Merchant Center — flux produit, issues, performance Shopping.
+  Use when user says "Merchant Center", "flux produit", "Shopping", "feed produit",
+  "Google Shopping audit", "issues produit". Uses MCP: merchant-center.
 ---
 
 # Merchant Center Audit Skill

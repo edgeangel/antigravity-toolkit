@@ -1,0 +1,52 @@
+{
+  "templates": {
+    "note_client": {
+      "id": "19a6xGqBL-e7s07KmGKIIf4uQPetgNL4F-bvPJkbdTMQ",
+      "name": "[Template] EdgeAngel — Note Client",
+      "description": "Template pour notes client, rapports de performance, analyses.",
+      "placeholders": {
+        "{{TITRE_DOCUMENT}}": "Titre principal du document (H1/TITLE)",
+        "{{SOUS_TITRE}}": "Sous-titre (ex: Note EdgeAngel)",
+        "{{DATE}}": "Date du document",
+        "{{EXEC_SUMMARY}}": "Points clés de l'executive summary (encadré bleu)",
+        "{{SECTION_1_TITRE}}": "Titre de la première section (HEADING_1)",
+        "{{SECTION_2_TITRE}}": "Titre de la deuxième section (HEADING_1)"
+      },
+      "lorem_blocks": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      ],
+      "structure": [
+        "TITLE → {{TITRE_DOCUMENT}}",
+        "SUBTITLE → {{SOUS_TITRE}} — {{DATE}}",
+        "HEADING_1 → EXECUTIVE SUMMARY (titre fixe)",
+        "ENCADRE → {{EXEC_SUMMARY}}",
+        "HEADING_1 → {{SECTION_1_TITRE}}",
+        "  HEADING_2 → ▸ Vue d'ensemble",
+        "  NORMAL_TEXT → Lorem ipsum (body specimen)",
+        "  HEADING_2 → ▸ Données clés",
+        "  TABLE → 5×3 (specimen formaté)",
+        "  HEADING_2 → ▸ Conclusion intermédiaire",
+        "  NORMAL_TEXT → Lorem ipsum",
+        "HEADING_1 → {{SECTION_2_TITRE}}",
+        "  HEADING_2 → ▸ Segmentation",
+        "  NORMAL_TEXT → Lorem ipsum",
+        "  HEADING_2 → ▸ Recommandations stratégiques",
+        "  BULLET LIST → 4 bullets (specimen)",
+        "HEADING_1 → CONCLUSION ET RECOMMANDATIONS (titre fixe)",
+        "NORMAL_TEXT → Lorem ipsum (conclusion body)",
+        "ENCADRE → Lorem ipsum (call to action encadré)"
+      ]
+    }
+  },
+  "shared_drive_id": "0APKtfv00b73iUk9PVA",
+  "brand": {
+    "colors": {
+      "navy": {"rgb": [0.047, 0.157, 0.271], "hex": "#0C2845"},
+      "pacific": {"rgb": [0.086, 0.302, 0.506], "hex": "#164D81"},
+      "slate": {"rgb": [0.2, 0.255, 0.333], "hex": "#334155"},
+      "grey": {"rgb": [0.392, 0.455, 0.545], "hex": "#64748B"},
+      "ice_blue": {"rgb": [0.937, 0.965, 1.0], "hex": "#EFF7FF"}
+    },
+    "font": "Inter"
+  }
+}

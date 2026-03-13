@@ -1,6 +1,10 @@
 ---
-name: agent-engine-deploy
-description: Guide expert pour déployer, gérer et opérer un agent ADK sur Vertex AI Agent Engine (Runtime managé, CLI, SDK, IAM, Telemetry, Troubleshooting).
+name: ea-agent-engine-deploy
+description: >
+  Guide expert pour déployer, gérer et opérer un agent ADK sur Vertex AI Agent Engine
+  (Runtime managé, CLI, SDK, IAM, Telemetry, Troubleshooting).
+  Use when user says "déployer un agent", "deploy agent engine", "Vertex AI agent",
+  "mettre en production un agent", "agent engine deploy". Linked skill: ea-adk-creation for creation.
 ---
 
 # Agent Engine Deploy — Skill Reference

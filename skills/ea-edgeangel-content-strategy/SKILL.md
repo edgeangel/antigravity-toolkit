@@ -1,6 +1,9 @@
 ---
 name: ea-edgeangel-content-strategy
-description: Guide expert pour rédiger du contenu à forte valeur ajoutée EdgeAngel (Notes d'Expert). Lire ea-edgeangel-brand-voice AVANT ce skill.
+description: >
+  Guide expert pour rédiger du contenu à forte valeur ajoutée EdgeAngel (Notes d'Expert, articles de fond).
+  Use when user says "Note d'Expert", "article EdgeAngel", "blog EdgeAngel", "rédiger un article",
+  "contenu SEO EdgeAngel", "GEO content". Always read ea-edgeangel-brand-voice BEFORE this skill.
 ---
 
 # EdgeAngel Content Strategy — Notes d'Expert

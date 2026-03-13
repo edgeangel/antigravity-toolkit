@@ -1,6 +1,9 @@
 ---
-name: expert_bqml_arima_plus_xreg
-description: Guide expert pour concevoir, entraîner et exploiter des modèles ARIMA_PLUS_XREG dans BigQuery ML, avec focus sur l'analyse de contribution média et le MMM simplifié.
+name: ea-expert_bqml_arima_plus_xreg
+description: >
+  Guide expert ARIMA_PLUS_XREG dans BigQuery ML — contribution média et MMM simplifié.
+  Use when user says "BQML", "ARIMA", "contribution média", "forecast", "prévision",
+  "time series", "BigQuery ML". Uses MCP: bigquery. For full MMM: ea-meridian-mmm.
 ---
 
 # SKILL.md : Expertise Modélisation ARIMA_PLUS_XREG (BigQuery ML)

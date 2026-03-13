@@ -2,11 +2,15 @@
 name: ea-analyse-olivier
 description: >
   Framework complet d'analyse de performance acquisition selon la méthode Olivier / EdgeAngel.
-  Couvre le cadrage, le workflow d'investigation, les angles d'analyse, et le mindset.
+  Couvre le cadrage, le workflow d'investigation (4 phases), les angles d'analyse, le mindset,
+  ET le profil utilisateur d'Olivier (préférences, style de travail, patterns de décision).
   Use when user says "analyser la performance", "baisse de performance",
   "ROAS", "conversion drop", "audit performance", "pourquoi les conversions baissent",
   "diagnostic performance", "analyse acquisition", "pourquoi ça baisse",
-  "comparer les périodes", "qu'est-ce qui se passe sur le compte".
+  "comparer les périodes", "qu'est-ce qui se passe sur le compte",
+  "profil olivier", "préférences", "comment olivier travaille".
+  Always read ea-client-context for known clients. Uses MCPs: bigquery, google-analytics,
+  google-ads-gms, meta-ads, merchant-center.
 ---
 
 # Analyse de Performance Acquisition — Méthode Olivier / EdgeAngel
@@ -288,3 +292,38 @@ Dans la phase d'analyse, rester sur le diagnostic pur. Proposer des actions uniq
 - [ ] Les points à clarifier avec le client sont listés
 - [ ] Le journal d'analyse est à jour
 - [ ] Le ton est factuel, humble, sans emphase
+
+---
+
+## 7. Profil Utilisateur — Olivier Chubilleau
+
+> Enrichissement continu — proposer une mise à jour après chaque conversation significative.
+
+### Identité & Rôle
+- **Fondateur & CEO** d'EdgeAngel — double casquette stratège data + expert technique
+- **Équipe** : petite structure agile (Olivier = Stratégie/IA/Tech, Paul = Business/Sales)
+
+### Style de Travail
+- Sessions longues et intenses (1-2h) > micro-tâches. Souvent le soir/week-end.
+- Réponses directes et structurées — pas de superflu. Proactivité > passivité.
+- Décide vite une fois la bonne information obtenue.
+- Valorise la **scalabilité** : "est-ce que ça tient dans 6 mois ?"
+- Itère sur du concret plutôt que de théoriser longtemps.
+- Langue : **français** (technique OK en anglais).
+
+### Préférences Techniques
+- **Stack principale** : BigQuery, Google Ads API, Meta Ads API, GA4, Merchant Center
+- **No-code** : Notion (reporting), Asana (gestion projet), Slack (comm)
+- **Dev** : Python, SQL, Astro (site web), Docker
+- **Philosophie** : open-source quand possible, Google Cloud en infrastructure
+
+### Patterns Observés
+
+> Format : `[Date] Pattern observé`
+
+- `[2026-03-09]` Quand il explore un nouveau sujet, il veut d'abord un **benchmark exhaustif** avant de choisir
+- `[2026-03-09]` Pense "système" : chaque outil doit s'intégrer dans l'écosystème global, pas être un silo
+- `[2026-03-09]` Investit fortement dans l'infrastructure invisible (KIs, skills, rules) — levier multiplicateur
+- `[2026-03-08]` Lors des sessions nocturnes, plus exploratoire et orienté R&D
+- `[2026-03-08]` Teste systématiquement les limites d'un outil avant de l'adopter
+

@@ -1,6 +1,11 @@
 ---
 name: ea-client-context
-description: Base de connaissances contextuelles par client. Contient la stratégie marketing, la structure de campagnes, les objectifs par levier, le calendrier promotionnel, les saisonnalités et les problématiques spécifiques de chaque client. À consulter si pertinent pour enrichir une analyse ou un reporting.
+description: >
+  Base de connaissances contextuelles par client. Contient la stratégie marketing, structure de campagnes,
+  objectifs par levier, calendrier promotionnel, saisonnalités et problématiques spécifiques de chaque client.
+  Use when user says "contexte client", "fiche client", "stratégie de", "objectifs de",
+  "quel client", "info client", "onboarding client". Always read BEFORE ea-reporting-leo for reporting
+  and BEFORE ea-ads-google or ea-ads-meta for client-specific audits.
 ---
 
 # Skill Client Context — EdgeAngel

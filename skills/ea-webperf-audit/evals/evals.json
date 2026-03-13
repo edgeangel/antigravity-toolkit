@@ -1,0 +1,78 @@
+{
+    "skill_name": "ea-webperf-audit",
+    "evals": [
+        {
+            "id": "eval-001",
+            "prompt": "Fais-moi un audit web performance de kiloutou.fr, je veux savoir si les Core Web Vitals sont bons et quel est l'impact du tracking sur la performance.",
+            "context": "Client Kiloutou, site e-commerce location matériel BTP",
+            "assertions": [
+                {
+                    "text": "Les données CrUX terrain sont récupérées via l'API (pas seulement Lighthouse)",
+                    "type": "process"
+                },
+                {
+                    "text": "Le rapport contient un tableau des 3 CWV (LCP, INP, CLS) avec verdict BON/MOYEN/MAUVAIS",
+                    "type": "output"
+                },
+                {
+                    "text": "Le breakdown par script tiers est présent avec au minimum CPU total par script",
+                    "type": "output"
+                },
+                {
+                    "text": "L'écart labo vs terrain est expliqué si les scores divergent",
+                    "type": "output"
+                },
+                {
+                    "text": "Deux livrables sont produits : synthèse client et rapport technique",
+                    "type": "output"
+                }
+            ]
+        },
+        {
+            "id": "eval-002",
+            "prompt": "Le client AFTEC me demande si Didomi ralentit son site. Tu peux analyser la web performance de aftec.fr et quantifier l'impact de Didomi ?",
+            "context": "Client AFTEC, Drupal, CMP Didomi, question politique sur l'impact d'un outil tiers spécifique",
+            "assertions": [
+                {
+                    "text": "L'analyse utilise les données terrain CrUX comme source de vérité (pas uniquement Lighthouse)",
+                    "type": "process"
+                },
+                {
+                    "text": "L'impact de Didomi est quantifié en ms et en % du budget JS total via PageSpeed API",
+                    "type": "output"
+                },
+                {
+                    "text": "Le rapport ne se limite pas à Didomi : les autres scripts tiers (GTM, GA4, etc.) sont aussi listés pour contextualiser",
+                    "type": "output"
+                },
+                {
+                    "text": "La synthèse client est rédigée en ton direct, sans jargon excessif",
+                    "type": "output"
+                }
+            ]
+        },
+        {
+            "id": "eval-003",
+            "prompt": "J'ai un score PageSpeed de 45 sur mobile pour le site iziconfort.fr, c'est grave ? Il faut qu'on fasse quelque chose ?",
+            "context": "Client Iziconfort, alarme sur un score Lighthouse bas",
+            "assertions": [
+                {
+                    "text": "L'agent ne prend PAS le score Lighthouse comme verdict final et vérifie les données terrain CrUX",
+                    "type": "process"
+                },
+                {
+                    "text": "L'écart labo vs terrain est expliqué (throttling, conditions simulées vs réelles)",
+                    "type": "output"
+                },
+                {
+                    "text": "Les CWV terrain sont évalués indépendamment du score Lighthouse agrégé",
+                    "type": "output"
+                },
+                {
+                    "text": "Les recommandations sont nuancées (pas de panique si les CWV terrain sont bons malgré un score labo bas)",
+                    "type": "output"
+                }
+            ]
+        }
+    ]
+}

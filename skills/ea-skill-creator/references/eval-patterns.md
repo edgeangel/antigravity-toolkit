@@ -56,7 +56,7 @@ Chaque type de skill EdgeAngel a des assertions types différentes. Ce guide aid
 
 ## Skills de process / routage
 
-**Exemples** : ea-orchestrateur, ea-client-context
+**Exemples** : ea-mcp-usage, ea-client-context
 
 ### Assertions types
 

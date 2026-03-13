@@ -1,6 +1,10 @@
 ---
-name: adk-creation
-description: Guide expert pour CRÉER un agent ADK from scratch en respectant les standards stricts du projet (Gemini 3 Global, BigQuery First, Sandbox Hardening).
+name: ea-adk-creation
+description: >
+  Guide expert pour CRÉER un agent ADK from scratch (Gemini 3 Global, BigQuery First, Sandbox Hardening).
+  Use when user says "créer un agent", "nouvel agent ADK", "agent Google", "ADK", "agent engine",
+  "agent builder", "développer un agent". Linked skill: ea-agent-engine-deploy for deployment.
+  Uses MCP: google-developer-knowledge.
 ---
 
 # ADK → Agent Creation Skill (Comprehensive)

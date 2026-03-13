@@ -1,6 +1,11 @@
 ---
 name: ea-edgeangel-brand-voice
-description: ADN et identité éditoriale EdgeAngel. Source de vérité pour le ton, la personnalité et le vocabulaire à adopter dans tout contenu produit pour EdgeAngel. Doit être lu AVANT tout autre skill edgeangel-*.
+description: >
+  ADN et identité éditoriale EdgeAngel. Source de vérité pour le ton, la personnalité et le vocabulaire
+  à adopter dans tout contenu produit pour EdgeAngel.
+  Use when user says "ton EdgeAngel", "brand voice", "comment écrire", "style rédactionnel",
+  "contenu EdgeAngel", "rédiger pour EA". MUST be read BEFORE ea-edgeangel-website-pages
+  and ea-edgeangel-content-strategy for any EdgeAngel content creation.
 ---
 
 # EdgeAngel Brand Voice

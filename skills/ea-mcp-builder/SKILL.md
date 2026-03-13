@@ -1,6 +1,9 @@
 ---
-name: mcp-builder
-description: MCP (Model Context Protocol) server building principles. Tool design, resource patterns, best practices.
+name: ea-mcp-builder
+description: >
+  MCP server building principles — tool design, resource patterns, best practices.
+  Use when user says "créer un MCP", "nouveau MCP", "MCP server", "construire un MCP".
+  Uses MCP: google-developer-knowledge. See ea-mcp-usage for existing MCP quirks.
 ---
 
 # MCP Builder — Guide Expert

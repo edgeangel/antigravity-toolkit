@@ -1,6 +1,11 @@
 ---
 name: ea-edgeangel-website-pages
-description: Guide expert pour créer et optimiser les pages transactionnelles du site EdgeAngel (Level 2, Level 3, Solutions). Intègre SEO, GEO, CRO et respecte le brand-voice. Lire ea-edgeangel-brand-voice AVANT ce skill.
+description: >
+  Guide expert pour créer et optimiser les pages du site EdgeAngel (Level 2, Level 3, Solutions).
+  Intègre SEO, GEO, CRO et respecte le brand-voice. Layouts Astro (Level2Layout, Level3Layout, SolutionLayout).
+  Use when user says "page EdgeAngel", "site EdgeAngel", "créer une page", "nouvelle page web",
+  "Level 2", "Level 3", "page solution", "SEO EdgeAngel", "GEO EdgeAngel", "FAQ page".
+  Always read ea-edgeangel-brand-voice BEFORE this skill. For articles/blog, use ea-edgeangel-content-strategy instead.
 ---
 
 # EdgeAngel Website — Pages Transactionnelles

@@ -1,6 +1,10 @@
 ---
-name: restitution-mmm
-description: Éléments de langage et guide éditorial pour rédiger du contenu de restitution d'analyses MMM ou contribution média. Ton pédagogique, humble, factuel. Destiné à des audiences non-techniques. Basé sur le template EdgeAngel Février 2026.
+name: ea-restitution-mmm
+description: >
+  Guide éditorial pour restituer des analyses MMM ou contribution média.
+  Ton pédagogique, humble, factuel — audiences non-techniques.
+  Use when user says "restitution MMM", "présenter les résultats", "rapport contribution",
+  "expliquer le MMM", "résultats Meridian". Linked: ea-meridian-mmm, ea-expert_bqml_arima_plus_xreg.
 ---
 
 # Éléments de langage — Restitution MMM & Contribution Média
